@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<info xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="https://apps.nextcloud.com/schema/apps/info.xsd">
+    <id>bookmarks</id>
+    <name>Bookmarks</name>
+    <summary>Bookmarks API</summary>
+    <description><![CDATA[Bookmarks API for later consumption by browsers extensions]]></description>
+    <licence>agpl</licence>
+    <author mail="miguelwmonteiro@gmail.com" >Miguel Wahnon Monteiro</author>
+    <version>0.0.1</version>
+    <namespace>Bookmarks</namespace>
+    <category>tools</category>
+    <bugs>https://github.com/mikeziri/nextcloud-bookmarks/issues</bugs>
+    <dependencies>
+        <nextcloud min-version="12" max-version="12"/>
+    </dependencies>
+    <navigations>
+        <navigation>
+            <name>Bookmarks</name>
+            <route>bookmarks.page.index</route>
+        </navigation>
+    </navigations>
+</info>
