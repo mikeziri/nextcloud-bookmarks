@@ -8,8 +8,14 @@
  * it's instantiated in there
  */
 return [
+    'resources' => [
+        'bookmarks' => ['url' => '/bookmarks'],
+        'bookmarks_api' => ['url' => '/api/0.1/bookmarks']
+    ],
     'routes' => [
 	   ['name' => 'page#index', 'url' => '/', 'verb' => 'GET'],
 	   ['name' => 'page#do_echo', 'url' => '/echo', 'verb' => 'POST'],
+        ['name' => 'bookmarks_api#preflighted_cors', 'url' => '/api/0.1/{path}',
+            'verb' => 'OPTIONS', 'requirements' => ['path' => '.+']]
     ]
 ];
